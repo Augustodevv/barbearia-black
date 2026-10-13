@@ -1,0 +1,182 @@
+/* ==========================================================================
+   BARBEARIA BLACK - ESTILOS PERSONALIZADOS E REFINAMENTO VISUAL
+   Estética: Moderno / Industrial / Vintage Premium
+   Paleta: Preto Ônix (#0B0B0C, #121214), Grafite (#1C1C20), Dourado (#D4AF37, #C5A059)
+   ========================================================================== */
+
+/* Fontes Customizadas e Suavização */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap');
+
+:root {
+    --color-bg-primary: #0B0B0C;
+    --color-bg-secondary: #121215;
+    --color-bg-card: #18181C;
+    --color-bg-card-hover: #202026;
+    
+    --color-gold-light: #F3E5AB;
+    --color-gold: #D4AF37;
+    --color-gold-hover: #E5C05B;
+    --color-gold-dark: #A68420;
+    
+    --color-text-main: #FFFFFF;
+    --color-text-muted: #9CA3AF;
+    --color-text-dim: #6B7280;
+    
+    --color-border-subtle: rgba(255, 255, 255, 0.08);
+    --color-border-gold: rgba(212, 175, 55, 0.35);
+}
+
+/* Reset Global e Comportamento de Rolagem */
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-main);
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    line-height: 1.6;
+}
+
+/* Títulos com Fonte Sofisticada */
+.font-display {
+    font-family: 'Cinzel', serif;
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Scrollbar Personalizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0B0B0C;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #27272A;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #D4AF37;
+}
+
+/* Efeito Gradiente Dourado Metálico */
+.gold-gradient-text {
+    background: linear-gradient(135deg, #FFF0B8 0%, #D4AF37 50%, #AA820A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.gold-gradient-bg {
+    background: linear-gradient(135deg, #D4AF37 0%, #B89025 100%);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gold-gradient-bg:hover {
+    background: linear-gradient(135deg, #F3D267 0%, #CFA530 100%);
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.45);
+    transform: translateY(-2px);
+}
+
+/* Efeito Glow Dourado Suave */
+.gold-glow {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.gold-glow-hover:hover {
+    box-shadow: 0 0 28px rgba(212, 175, 55, 0.35);
+    border-color: rgba(212, 175, 55, 0.8);
+}
+
+/* Efeito Glassmorphism Escuro */
+.glass-card {
+    background: rgba(24, 24, 28, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-nav {
+    background: rgba(11, 11, 12, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+/* Linha Divisória Dourada Elegante */
+.gold-divider {
+    height: 2px;
+    width: 60px;
+    background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+    margin: 1rem auto;
+}
+
+/* Animação Suave do Botão Flutuante do WhatsApp */
+@keyframes whatsappPulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.6);
+    }
+    70% {
+        box-shadow: 0 0 0 16px rgba(37, 211, 102, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+    }
+}
+
+.whatsapp-float-pulse {
+    animation: whatsappPulse 2.2s infinite;
+}
+
+/* Badge Dourado e Destaques */
+.gold-badge {
+    background: rgba(212, 175, 55, 0.12);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    color: #F3E5AB;
+}
+
+/* Otimização Mobile: Touch targets e espaçamentos */
+@media (max-width: 640px) {
+    .touch-target {
+        min-height: 48px;
+        min-width: 48px;
+    }
+}
+
+/* Card Hover 3D Suave */
+.card-hover-effect {
+    transition: transform 0.3s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.card-hover-effect:hover {
+    transform: translateY(-6px);
+    border-color: rgba(212, 175, 55, 0.45);
+    box-shadow: 0 14px 30px -10px rgba(0, 0, 0, 0.8), 0 0 20px rgba(212, 175, 55, 0.15);
+}
+
+/* Efeito de Overlay de Imagem Cinematográfico */
+.image-vignette {
+    position: relative;
+}
+
+.image-vignette::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(11, 11, 12, 0.2) 0%, rgba(11, 11, 12, 0.85) 100%);
+    pointer-events: none;
+}
