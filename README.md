@@ -1,54 +1,39 @@
-# 💈 Barbearia Black — Landing Page Moderna & Responsiva
+# Barbearia Black — landing page
 
-> **"Muito mais que um corte, uma experiência."**  
-> Landing page profissional e de alta conversão desenvolvida para barbearias de alto padrão, combinando tradição clássica da navalha e estilo moderno.
+Conceito de landing page responsiva para uma barbearia, com apresentação de serviços e um fluxo de agendamento pelo WhatsApp.
 
----
+## Problema
 
-## 📸 Demonstração do Projeto
-- **Design:** Moderno, Industrial & Vintage Speakeasy (Dark & Gold).
-- **Abordagem:** Estritamente *Mobile-First*, adaptável de 390px até 4K.
-- **Paleta de Cores:** Fundo Preto Ônix (`#0B0B0C`), Grafite Metálico (`#18181B`) e detalhes elegantes em Dourado (`#D4AF37`, `#F3E5AB`).
+Barbearias precisam mostrar serviços, preços e disponibilidade de maneira rápida, especialmente no celular. O projeto explora uma experiência visual escura e dourada com um caminho direto até o agendamento.
 
----
+## Funcionalidades
 
-## 🚀 Funcionalidades & Seções
-- **Top Bar Promocional:** Aviso dinâmico de cortesia (Chopp/Café) e atalho para agendamento.
-- **Hero Section Cinematográfica:** Título persuasivo, Call-to-Action com glow dourado suave e badges de prova social.
-- **Sobre Nós:** Destaque para tradição, atendimento exclusivo e os 4 pilares: *Visagismo, Barboterapia com Toalha Quente, Lounge Bar & Sinuca, Cosméticos Premium*.
-- **Serviços & Tabela de Preços com Filtros:** Abas de categoria (*Todos, Cabelo, Barba, Combos*) com cards detalhados e valores.
-- **Nossos Barbeiros:** 3 cards com fotos em alta definição, especialidades e tempo de experiência.
-- **Prova Social / Avaliações:** Depoimentos reais de clientes com estrelas douradas e selo do Google Reviews.
-- **Modal Interativo de Agendamento Online:**
-  - Escolha de serviço, barbeiro, data e horário;
-  - Resumo de valores calculado em tempo real;
-  - Envio direto para o WhatsApp com mensagem pré-formatada.
-- **Botão Flutuante do WhatsApp:** Fixo com efeito contínuo de pulso (`pulse`) para contato imediato.
-- **Footer Completo:** Endereço, horário de funcionamento, mapa e redes sociais.
+- Hero, serviços, tabela de preços e apresentação de barbeiros.
+- Filtros por categoria de serviço.
+- Modal de agendamento com serviço, profissional, data e horário.
+- Resumo de valor e mensagem preparada para WhatsApp.
+- Menu móvel e botão flutuante de contato.
+- Layout mobile-first e metadados básicos de SEO.
 
----
+## Tecnologias
 
-## 🛠️ Tecnologias Utilizadas
-- **HTML5 Semântico:** Estrutura limpa, acessível e otimizada para SEO.
-- **Tailwind CSS (v3):** Estilização moderna e utilitária.
-- **Custom CSS:** Gradientes metálicos dourados, glassmorphism e efeitos de profundidade.
-- **JavaScript Puro (Vanilla JS):** Interatividade do menu mobile drawer, filtros, modal e integração com WhatsApp.
-- **Font Awesome 6 & Lucide Icons:** Ícones modernos de alta fidelidade.
-- **Google Fonts:** Tipografia `Cinzel` e `Montserrat`.
+- HTML5 semântico.
+- Tailwind CSS 3 via CDN.
+- CSS personalizado.
+- JavaScript puro.
+- Font Awesome, Lucide Icons e Google Fonts.
 
----
+## Como executar
 
-## 💻 Como Rodar Localmente
+```bash
+git clone https://github.com/Augustodevv/barbearia-black.git
+cd barbearia-black
+```
 
-1. **Clone o repositório:**
-   ```bash
-   git clone https://github.com/SEU-USUARIO/barbearia-black-landing-page.git
-   ```
-2. **Abra o arquivo:**
-   - Dê um duplo clique no `index.html`, ou
-   - Abra com a extensão **Live Server** no VS Code.
+Abra `index.html` no navegador ou use uma extensão de servidor local.
 
----
+## Estado do projeto
 
-## 📄 Licença
-Distribuído sob a licença MIT. Sinta-se livre para utilizar e customizar.
+Conceito de portfólio em desenvolvimento. Nomes, promoções, avaliações, endereço, preços e profissionais do layout são demonstrativos e precisam ser substituídos por dados confirmados antes de uso comercial.
+
+
